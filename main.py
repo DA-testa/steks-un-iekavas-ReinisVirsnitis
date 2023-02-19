@@ -23,7 +23,7 @@ def find_mismatch(text):
         
 recent_bracket = open.pop()
 
-if !matching(recent_beacket.char, next):
+if !matching(recent_bracket.char, next):
     return i + 1
 
 if len(opening) > 0:
