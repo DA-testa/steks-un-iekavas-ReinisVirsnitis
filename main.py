@@ -11,19 +11,19 @@ def are_matching(left, right):
 
 def find_mismatch(text):
     opening_brackets_stack = []
-    for i, next_char in enumerate(text):
-        if next_char in "([{":
+    for i, next in enumerate(text):
+        if next in "([{":
             opening.append(Bracket(next_char, i + 1))
             pass
 
-        elif next_char in ")]}":
+        elif next in ")]}":
            if len(opening) == 0:
             return i + 1
             pass
         
 recent_bracket = open.pop()
 
-if !matching(recent_beacket.char, next_char):
+if !matching(recent_beacket.char, next):
     return i + 1
 
 if len(opening) > 0:
