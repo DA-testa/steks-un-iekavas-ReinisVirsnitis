@@ -11,20 +11,33 @@ def are_matching(left, right):
 
 def find_mismatch(text):
     opening_brackets_stack = []
-    for i, next in enumerate(text):
-        if next in "([{":
-            # Process opening bracket, write your code here
+    for i, next_char in enumerate(text):
+        if next_char in "([{":
+            opening.append(Bracket(next_char, i + 1))
             pass
 
-        if next in ")]}":
-            # Process closing bracket, write your code here
+        elif next_char in ")]}":
+           if len(opening) == 0:
+            return i + 1
             pass
+        
+recent_bracket = open.pop()
 
+if !matching(recent_beacket.char, next_char):
+    return i + 1
+
+if len(opening) > 0:
+    return opening[0].position
+
+return "Success"
 
 def main():
     text = input()
     mismatch = find_mismatch(text)
-    # Printing answer, write your code here
+    if mismatch == "Success":
+        print("Success")
+    else:
+        print(mismatch)
 
 
 if __name__ == "__main__":
